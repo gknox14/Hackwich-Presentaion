@@ -14,6 +14,7 @@
 		054BE6601C909A0200ABB6CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054BE65E1C909A0200ABB6CB /* LaunchScreen.storyboard */; };
 		054BE66B1C909A0200ABB6CB /* Swift_Hack_PresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BE66A1C909A0200ABB6CB /* Swift_Hack_PresentationTests.swift */; };
 		054BE6761C909A0200ABB6CB /* Swift_Hack_PresentationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BE6751C909A0200ABB6CB /* Swift_Hack_PresentationUITests.swift */; };
+		054BE6861C91D40C00ABB6CB /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054BE6851C91D40C00ABB6CB /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		054BE6711C909A0200ABB6CB /* Swift Hack PresentationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift Hack PresentationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		054BE6751C909A0200ABB6CB /* Swift_Hack_PresentationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Hack_PresentationUITests.swift; sourceTree = "<group>"; };
 		054BE6771C909A0200ABB6CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		054BE6851C91D40C00ABB6CB /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Image.swift; path = ../Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				054BE6551C909A0200ABB6CB /* AppDelegate.swift */,
 				054BE6571C909A0200ABB6CB /* ViewController.swift */,
+				054BE6851C91D40C00ABB6CB /* Image.swift */,
 				054BE6591C909A0200ABB6CB /* Main.storyboard */,
 				054BE65C1C909A0200ABB6CB /* Assets.xcassets */,
 				054BE65E1C909A0200ABB6CB /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				054BE6581C909A0200ABB6CB /* ViewController.swift in Sources */,
+				054BE6861C91D40C00ABB6CB /* Image.swift in Sources */,
 				054BE6561C909A0200ABB6CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +488,7 @@
 				054BE67C1C909A0200ABB6CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		054BE67D1C909A0200ABB6CB /* Build configuration list for PBXNativeTarget "Swift Hack PresentationTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				054BE67F1C909A0200ABB6CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		054BE6801C909A0200ABB6CB /* Build configuration list for PBXNativeTarget "Swift Hack PresentationUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				054BE6821C909A0200ABB6CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
