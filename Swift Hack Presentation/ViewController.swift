@@ -24,22 +24,53 @@ class ViewController: UIViewController {
         images.append(Image(newImage : UIImage(named: "king.png")!))
         images.append(Image(newImage : UIImage(named: "jack.png")!))
         images.append(Image(newImage : UIImage(named: "ace.png")!))
-        imageOne.image = UIImage(named: "king.png")
-        imageTwo.image = UIImage(named: "queen.png")
-        imageThree.image = UIImage(named: "jack.png")
-        imageFour.image = UIImage(named: "ace.png")
+        images.append(Image(newImage : UIImage(named: "two.png")!))
+        images.append(Image(newImage : UIImage(named: "three.png")!))
+        images.append(Image(newImage : UIImage(named: "four.png")!))
+        images.append(Image(newImage : UIImage(named: "five.png")!))
+        images.append(Image(newImage : UIImage(named: "six.png")!))
+        images.append(Image(newImage : UIImage(named: "seven.png")!))
+        images.append(Image(newImage : UIImage(named: "eight.png")!))
+        images.append(Image(newImage : UIImage(named: "nine.png")!))
+        images.append(Image(newImage : UIImage(named: "ten.png")!))
         
+        imageOne.image = UIImage(named: "two.png")
+        imageTwo.image = UIImage(named: "three.png")
+        imageThree.image = UIImage(named: "four.png")
+        imageFour.image = UIImage(named: "five.png")
     }
 
     @IBAction func shuffleButton(sender: AnyObject) {
-        selectImage() 
+        selectImageOne()
+        selectImageTwo()
+        selectImageThree()
+        selectImageFour()
     }
     
-    func selectImage() -> Image {
-        random = Int(arc4random_uniform(4))
+    func selectImageOne() -> Image {
+        random = Int(arc4random_uniform(13))
        imageOne.image = images[random].images
        return images[random]
    }
+    
+    func selectImageTwo() -> Image {
+        random = Int(arc4random_uniform(13))
+        imageTwo.image = images[random].images
+        return images[random]
+    }
+    
+    func selectImageThree() -> Image {
+        random = Int(arc4random_uniform(13))
+        imageThree.image = images[random].images
+        return images[random]
+    }
+    
+    func selectImageFour() -> Image {
+        random = Int(arc4random_uniform(13))
+        imageFour.image = images[random].images
+        return images[random]
+    }
+    
 
 
 }
