@@ -17,6 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyK-wC-Jee">
+                                <rect key="frame" x="258" y="18" width="120" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Shuffle">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZKF-ut-G8Z"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="u7c-vL-JIa">
                                 <rect key="frame" x="202" y="330" width="355" height="250"/>
                                 <subviews>
@@ -57,22 +67,20 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyK-wC-Jee">
-                                <rect key="frame" x="258" y="18" width="120" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Shuffle">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="shuffleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZKF-ut-G8Z"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7s2-M9-RcT">
+                                <rect key="frame" x="0.0" y="321" width="600" height="11"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kyK-wC-Jee" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HKb-Ry-FSS"/>
                             <constraint firstItem="u7c-vL-JIa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d1m-AU-GCA"/>
                             <constraint firstItem="ZVf-t3-3Vr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fWr-rq-7XL"/>
+                            <constraint firstItem="7s2-M9-RcT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oIU-Oo-rMv"/>
                         </constraints>
                     </view>
                     <connections>

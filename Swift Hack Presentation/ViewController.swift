@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //card images
         images.append(Image(newImage : UIImage(named: "queen.png")!))
         images.append(Image(newImage : UIImage(named: "king.png")!))
         images.append(Image(newImage : UIImage(named: "jack.png")!))
@@ -34,44 +36,26 @@ class ViewController: UIViewController {
         images.append(Image(newImage : UIImage(named: "nine.png")!))
         images.append(Image(newImage : UIImage(named: "ten.png")!))
         
+        //starting images for UIImageViews
         imageOne.image = UIImage(named: "two.png")
         imageTwo.image = UIImage(named: "three.png")
         imageThree.image = UIImage(named: "four.png")
         imageFour.image = UIImage(named: "five.png")
     }
 
+    //gives each UIImageView a random image
     @IBAction func shuffleButton(sender: AnyObject) {
-        selectImageOne()
-        selectImageTwo()
-        selectImageThree()
-        selectImageFour()
+        selectImage(imageOne)
+        selectImage(imageTwo)
+        selectImage(imageThree)
+        selectImage(imageFour)
     }
     
-    func selectImageOne() -> Image {
+    //gets random cardImage
+    func selectImage(cardImage : UIImageView) {
         random = Int(arc4random_uniform(13))
-       imageOne.image = images[random].images
-       return images[random]
-   }
-    
-    func selectImageTwo() -> Image {
-        random = Int(arc4random_uniform(13))
-        imageTwo.image = images[random].images
-        return images[random]
+        cardImage.image = images[random].images
     }
-    
-    func selectImageThree() -> Image {
-        random = Int(arc4random_uniform(13))
-        imageThree.image = images[random].images
-        return images[random]
-    }
-    
-    func selectImageFour() -> Image {
-        random = Int(arc4random_uniform(13))
-        imageFour.image = images[random].images
-        return images[random]
-    }
-    
-
 
 }
 
